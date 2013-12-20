@@ -1,0 +1,21 @@
+Source: rt-extension-spawnlinkedticketinqueue
+Section: perl
+Priority: optional
+Maintainer: KURASHIKI Satoru <lurdan@gmail.com>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl,
+ perl-modules
+Standards-Version: 3.9.5
+Vcs-Git: https://github.com/lurdan/rt-extension-spawnlinkedticketinqueue.git
+Vcs-Browser: https://github.com/lurdan/rt-extension-spawnlinkedticketinqueue/tree/dpkg
+Homepage: http://search.cpan.org/dist/RT-Extension-SpawnLinkedTicketInQueue/
+
+Package: rt4-extension-spawnlinkedticketinqueue
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+ request-tracker4,
+ perl
+Description: quickly spawn linked tickets in different queues
+ After installing this RT extension, on ticket's page in the Links block you
+ should see new controls.
+

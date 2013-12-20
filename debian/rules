@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+RT_VERSIONS=4
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	for ver in $(RT_VERSIONS); do \
+	 export RTHOME=/usr/share/request-tracker$$ver; \
+	 perl Makefile.PL PREFIX=$(CURDIR)/debian/rt$$ver-extension-spawnlinkedticketinqueue/usr/share/request-tracker$$ver/plugins/RT-Extension-SpawnLinkedTicketInQueue; \
+	 mv Makefile Makefile$$ver; \
+	done
+
+override_dh_auto_build:
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	for ver in $(RT_VERSIONS); do \
+	 ln -sf Makefile$$ver Makefile; \
+	 make install; \
+        done
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf MYMETA.yml Makefile4
+
