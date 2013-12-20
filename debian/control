@@ -15,7 +15,7 @@ Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
  request-tracker4,
  perl
-Description: quickly spawn linked tickets in different queues
+Description: quickly spawn linked tickets in different queues (Request Tracker)
  After installing this RT extension, on ticket's page in the Links block you
  should see new controls.
 
