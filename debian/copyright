@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Maintainer: Kevin Falcone <falcone@bestpractical.com>
+Upstream-Contact: Kevin Falcone <falcone@bestpractical.com>
 Source: http://search.cpan.org/dist/RT-Extension-SpawnLinkedTicketInQueue/
-Name: RT-Extension-SpawnLinkedTicketInQueue
+Upstream-Name: RT-Extension-SpawnLinkedTicketInQueue
 
 Files: *
 Copyright: 2009-2013, Best Practical Solutions, Kevin Falcone <falcone@bestpractical.com>
