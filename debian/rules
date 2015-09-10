@@ -6,9 +6,10 @@ RT_VERSIONS=4
 	dh $@
 
 override_dh_auto_configure:
+	rm -rf inc/Module
 	for ver in $(RT_VERSIONS); do \
 	 export RTHOME=/usr/share/request-tracker$$ver; \
-	 perl Makefile.PL PREFIX=$(CURDIR)/debian/rt$$ver-extension-spawnlinkedticketinqueue/usr/share/request-tracker$$ver/plugins/RT-Extension-SpawnLinkedTicketInQueue; \
+	 perl Makefile.PL INSTALLDIRS=vendor; \
 	 mv Makefile Makefile$$ver; \
 	done
 
@@ -19,6 +20,7 @@ override_dh_auto_test:
 override_dh_auto_install:
 	for ver in $(RT_VERSIONS); do \
 	 ln -sf Makefile$$ver Makefile; \
+	 export PERL_INSTALL_ROOT=$(CURDIR)/debian/rt$$ver-extension-spawnlinkedticketinqueue; \
 	 make install; \
         done
 

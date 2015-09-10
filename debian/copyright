@@ -4,11 +4,11 @@ Source: http://search.cpan.org/dist/RT-Extension-SpawnLinkedTicketInQueue/
 Upstream-Name: RT-Extension-SpawnLinkedTicketInQueue
 
 Files: *
-Copyright: 2009-2013, Best Practical Solutions, Kevin Falcone <falcone@bestpractical.com>
+Copyright: 2009-2015, Best Practical Solutions, Kevin Falcone <falcone@bestpractical.com>
 License: GPL-2
 
 Files: debian/*
-Copyright: 2013, KURASHIKI Satoru <lurdan@gmail.com>
+Copyright: 2013-2015, KURASHIKI Satoru <lurdan@gmail.com>
 License: GPL-2
 
 License: GPL-2

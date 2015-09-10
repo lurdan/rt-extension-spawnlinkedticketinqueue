@@ -1,3 +1,11 @@
+rt-extension-spawnlinkedticketinqueue (1.01-1) unstable; urgency=medium
+
+  * New upstream release.
+  * New Standards-Version: 3.9.6
+  * Depends on libmodule-install-rtx-perl.
+
+ -- KURASHIKI Satoru <lurdan@gmail.com>  Thu, 10 Sep 2015 11:22:15 +0900
+
 rt-extension-spawnlinkedticketinqueue (0.06-1) unstable; urgency=low
 
   * Initial Release. (Closes: #732664)
